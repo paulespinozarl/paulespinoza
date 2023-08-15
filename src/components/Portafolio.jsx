@@ -14,7 +14,7 @@ export const Portafolio = () => {
             <div className="contenedor">
               <div className="w-2/4 p-2 rounded-2xl m-2">
                 <h1 className="text-2xl md:text-3xl text-white p-2 font-semibold w-72 lg:w-full">Hola, soy Paul</h1>
-                <p className=" text-md lg:text-xl p-3 text-gray-50 w-72 lg:w-full">Radicado en Argentina con experiencia en el desarrollo de aplicaciones en JavaScript y React con bibliotecas UI.</p>
+                <p className=" text-md lg:text-xl p-3 text-gray-50 w-80 lg:w-full">Radicado en Argentina con experiencia en el desarrollo de aplicaciones en JavaScript y React con bibliotecas UI.</p>
                 <p className='text-white text-2xl md:text-3xl font-semibold p-2 mt-5'> Contacto </p>
                   <div className='flex mb-2 mt-2 ml-2'>
                     <a href='mailto:paulespinozarl@gmail.com' className="mr-5 transition-transform duration-200 hover:scale-125">
@@ -60,7 +60,7 @@ export const Portafolio = () => {
                       <a href="#" target="_blank">
                           <img className='lg:w-full w-72 rounded-xl animate__animated animate__fadeInLeft' src={ unidebikesLogo } alt="otros" />
                       </a>
-                      <span className='flex justify-center items-center m-2 md:m-5 text-gray-200 font-medium text-sm md:text-lg'>Sitio web de Undiebikes Repostería</span>
+                      <span className='flex justify-center items-center m-2 md:m-5 text-gray-200 font-medium text-sm md:text-lg'>Sitio web de Undiebikes</span>
                     </div>
                     <div className='bg-gray-800 p-2 rounded-xl flex shadow-md shadow-gray-600'>
                       <a href="https://aldas-reposteria.vercel.app/" target="_blank">
@@ -75,7 +75,7 @@ export const Portafolio = () => {
           <div className='m-5'>
             <div className="max-w-6xl mx-auto flex flex-wrap mt-10 mb-10 md:p-3 lg:p-0 relative">
               <div className="absolute top-0 lg:top-5 md:left-5 left-0 lg:left-5 h-32 ">
-                <h1 className='text-3xl sm:text-6xl md:text-7xl  font-bold dark:text-slate-500/30 text-slate-700/20'>Desarrollador de  Software</h1>
+                <h1 className='text-3xl sm:text-6xl md:text-7xl  font-bold dark:text-slate-500/10 text-slate-700/20'>Desarrollador de  Software</h1>
               </div>
               <div className="w-full lg:w-1/2  p-5 lg:border-l-4 border-slate-700 relative md:pl-9 pl-0 lg:mt-14">
                 <h1 className=" text-3xl md:text-5xl font-bold text-white ">Aprendizaje</h1>
