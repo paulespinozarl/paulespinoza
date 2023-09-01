@@ -19,7 +19,7 @@ const IconLeft = ({icon, description}) => {
   return (
     <div ref={ref} className={`${
         isVisible
-            ? 'animate__animated animate__fadeInLeft flex flex-col justify-center items-center'
+            ? 'animate__animated animate__fadeInLeft flex flex-col justify-center items-center mr-20'
             : 'opacity-0'
       }`} >
         { icon }

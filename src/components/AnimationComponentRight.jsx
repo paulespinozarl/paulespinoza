@@ -17,7 +17,7 @@ const AnimationComponentRight = ({image, alt, description, url}) => {
     }, [inView]);
 
   return (
-    <div className="p-2 flex max-w-6xl mx-auto rounded-xl justify-center">
+    <div className="p-2 flex max-w-xd mx-auto rounded-xl justify-center">
         <div className='grid grid-cols-1 gap-6'>
             <div 
                 ref={ref}

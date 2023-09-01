@@ -17,7 +17,7 @@ const AnimationComponentLeft = ({image, alt, description, url}) => {
     }, [inView]);
 
   return (
-    <div className="p-2 flex max-w-6xl mx-auto rounded-xl justify-center">
+    <div className="p-2 flex max-w-xd mx-auto rounded-xl justify-center">
         <div className='grid grid-cols-1 gap-6'>
             <div 
                 ref={ref}
@@ -26,7 +26,7 @@ const AnimationComponentLeft = ({image, alt, description, url}) => {
                     <img className={`lg:w-full w-72 rounded-xl ${
                       isVisible
                           ? 'animate__animated animate__fadeInLeft'
-                          : 'opacity-0'
+                          : 'animate__animated animate__fadeRight'
                     }`} 
                     src={ image } 
                     alt={ alt } />
