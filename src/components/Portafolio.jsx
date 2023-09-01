@@ -3,11 +3,16 @@ import { BsGit, BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { BiLogoCss3, BiLogoMongodb, BiLogoNodejs } from 'react-icons/bi';
-import { tailwind, unidebikesLogo, capAldas } from '../../public'
+import { tailwind, unidebikesLogo, capAldas } from '../../public';
 import 'animate.css';
+import { InView } from 'react-intersection-observer';
+import AnimationComponentLeft from './AnimationComponentLeft';
+import AnimationComponentRight from './AnimationComponentRight';
+import IconRight from './IconRight';
+import IconLeft from './IconLeft';
 
 export const Portafolio = () => {
-      
+
     return (
         <>
           <div className='m-5'>
@@ -55,19 +60,23 @@ export const Portafolio = () => {
             
           <div>
             <div className="p-2 flex max-w-6xl mx-auto rounded-xl justify-center">
-                <div className='grid grid-cols-1 gap-6'>
-                    <div className='bg-gray-800 p-2 rounded-xl flex shadow-md shadow-gray-600'>
-                      <a href="#" target="_blank">
-                          <img className='lg:w-full w-72 rounded-xl animate__animated animate__fadeInLeft' src={ unidebikesLogo } alt="otros" />
-                      </a>
-                      <span className='flex justify-center items-center m-2 md:m-5 text-gray-200 font-medium text-sm md:text-lg'>Sitio web de Undiebikes</span>
+                <div className='grid grid-cols-1 gap-6'>                    
+                    <div>
+                      {InView && <AnimationComponentLeft 
+                      image={ unidebikesLogo }
+                      alt='undiebikes'
+                      description='Sitio web de Undiebikes'
+                      url='https://undiebikes.vercel.app/'
+                      />}
                     </div>
-                    <div className='bg-gray-800 p-2 rounded-xl flex shadow-md shadow-gray-600'>
-                      <a href="https://aldas-reposteria.vercel.app/" target="_blank">
-                          <img className='lg:w-full w-72 rounded-xl animate__animated animate__fadeInRight' src={ capAldas } alt="otros" />
-                      </a>
-                      <span className='flex justify-center items-center m-2 md:m-5 text-gray-200 font-medium text-sm md:text-lg'>Sitio web de Aldas Repostería</span>
-                    </div>
+                    <div>
+                      {InView && <AnimationComponentRight 
+                      image={ capAldas }
+                      alt='aldasReposteria'
+                      description='Sitio web de Aldas Repostería'
+                      url='https://aldas-reposteria.vercel.app/'
+                      />}
+                    </div>                  
                 </div>
             </div>
           </div>
@@ -85,9 +94,9 @@ export const Portafolio = () => {
           </div>
 
           <section className='text-white flex justify-center items-center flex-col mb-10 mt-10'>
-            <FaReact className='animate__animated animate__fadeInLeft' size={60}/> <p>React Native</p>
-            <BiLogoNodejs className='animate__animated animate__fadeInRight' size={60}/> <p>Node Js</p>
-            <BiLogoMongodb className='animate__animated animate__fadeInLeft' size={60}/> <p>Mongo DB</p>
+            <div> { InView && <IconRight icon={ <FaReact size={60}/> } description={'React Native'}/>} </div>
+            <div> { InView && <IconLeft icon={ <BiLogoNodejs size={60}/> } description={'Node Js'}/>} </div>
+            <div> { InView && <IconRight icon={ <BiLogoMongodb size={60}/> } description={'Mongo DB'}/>} </div>
           </section>
         </>
       );
