@@ -94,9 +94,9 @@ export const Portafolio = () => {
           </div>
 
           <section className='text-white flex justify-center items-center flex-col mb-10 mt-10'>
-            <div> { InView && <IconRight icon={ <FaReact size={60}/> } description={'React Native'}/>} </div>
-            <div> { InView && <IconLeft icon={ <BiLogoNodejs size={60}/> } description={'Node Js'}/>} </div>
-            <div> { InView && <IconRight icon={ <BiLogoMongodb size={60}/> } description={'Mongo DB'}/>} </div>
+            <div> { InView && <IconLeft icon={ <FaReact size={60}/> } description={'React Native'}/>} </div>
+            <div> { InView && <IconRight icon={ <BiLogoNodejs size={60}/> } description={'Node Js'}/>} </div>
+            <div> { InView && <IconLeft icon={ <BiLogoMongodb size={60}/> } description={'Mongo DB'}/>} </div>
           </section>
         </>
       );
