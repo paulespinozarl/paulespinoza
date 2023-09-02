@@ -8,6 +8,9 @@ export default {
     extend: {
       maxWidth: {
         'xd': '966px',
+      },
+      mwidth: {
+        '200': '500px'
       }
     },
   },

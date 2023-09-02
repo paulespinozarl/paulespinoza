@@ -7,7 +7,7 @@ const AnimationComponentLeft = ({image, alt, description, url}) => {
     const [isVisible, setIsVisible] = useState(false);
     const { ref, inView } = useInView({
       triggerOnce: true,
-      threshold: 0.8,
+      threshold: 0.6,
     });
 
     useEffect(() => {
@@ -17,16 +17,14 @@ const AnimationComponentLeft = ({image, alt, description, url}) => {
     }, [inView]);
 
   return (
-    <div className="p-2 flex max-w-xd mx-auto rounded-xl justify-center">
+    <div ref={ref} className="p-2 flex max-w-xd mx-auto rounded-xl justify-center">
         <div className='grid grid-cols-1 gap-6'>
-            <div 
-                ref={ref}
-                className='bg-gray-800 p-2 rounded-xl flex shadow-md shadow-gray-600'>
+            <div className='bg-gray-800 p-2 rounded-xl flex shadow-md shadow-gray-600'>
                 <a href={ url } target="_blank">
                     <img className={`lg:w-full w-72 rounded-xl ${
                       isVisible
                           ? 'animate__animated animate__fadeInLeft'
-                          : 'animate__animated animate__fadeRight'
+                          : 'opacity-0'
                     }`} 
                     src={ image } 
                     alt={ alt } />
