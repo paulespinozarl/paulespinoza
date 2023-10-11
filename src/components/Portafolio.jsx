@@ -53,7 +53,7 @@ export const Portafolio = () => {
               </div>
               <div className="w-full lg:w-1/2 mt-5 p-5 lg:border-l-4 border-slate-700 relative md:pl-9 pl-0 lg:mt-14">
                 <h1 className=" text-3xl md:text-5xl font-bold text-white ">Proyectos</h1>
-                <p className=" text-md lg:text-xl dark:text-slate-500 text-slate-500">Línea de tiempo con mis proyectos</p>
+                <p className=" text-md lg:text-xl dark:text-slate-500 text-slate-500"></p>
               </div>
             </div>
           </div>
@@ -63,15 +63,15 @@ export const Portafolio = () => {
             <div className='flex justify-center flex-col max-w-xd mx-auto'>
               {InView && <AnimationComponentLeft 
               image={ unidebikesLogo }
-              alt='undiebikes'
-              description='Sitio web de Undiebikes'
-              url='https://undiebikes.vercel.app/'
+              alt='kenitos'
+              description='Panadería Kenitos'
+              url='https://www.instagram.com/kenitos.gourmet/'
               />}
 
               {InView && <AnimationComponentRight 
               image={ capAldas }
               alt='aldasReposteria'
-              description='Sitio web de Aldas Repostería'
+              description='Aldas Repostería'
               url='https://aldas-reposteria.vercel.app/'
               />}
             </div>
