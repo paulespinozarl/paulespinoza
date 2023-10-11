@@ -18,9 +18,6 @@ export const Navbar = () => {
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125">
           <FaGithub size={isShortScreen ? 30 : 25}/>
         </a>
-        <a href='../../public/cv.pdf' download className='text-sm h-auto w-6 ml-2'>
-        <BsFillFileEarmarkPersonFill size={isShortScreen ? 29 : 24}/>
-        </a>
       </div>
     </nav>
   );

@@ -3,7 +3,7 @@ import { BsGit, BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { BiLogoCss3, BiLogoMongodb, BiLogoNodejs } from 'react-icons/bi';
-import { tailwind, unidebikesLogo, capAldas } from '../../public';
+import { tailwind, unidebikesLogo, capAldas, styled, material } from '../../public';
 import 'animate.css';
 import { InView } from 'react-intersection-observer';
 import AnimationComponentLeft from './AnimationComponentLeft';
@@ -19,7 +19,7 @@ export const Portafolio = () => {
             <div className="contenedor">
               <div className="w-2/4 p-2 rounded-2xl m-2">
                 <h1 className="text-2xl md:text-3xl text-white p-2 font-semibold w-72 lg:w-full">Hola, soy Paul</h1>
-                <p className=" text-md lg:text-xl p-3 text-gray-50 w-80 lg:w-full">Radicado en Argentina con experiencia en el desarrollo de aplicaciones en JavaScript y React con bibliotecas UI.</p>
+                <p className=" text-md lg:text-xl p-3 text-gray-50 w-80 lg:w-full">Radicado en Argentina con experiencia en el desarrollo de aplicaciones y paginas web usando JavaScript y React con bibliotecas UI.</p>
                 <p className='text-white text-2xl md:text-3xl font-semibold p-2 mt-5'> Contacto </p>
                   <div className='flex mb-2 mt-2 ml-2'>
                     <a href='mailto:paulespinozarl@gmail.com' className="mr-5 transition-transform duration-200 hover:scale-125">
@@ -37,8 +37,10 @@ export const Portafolio = () => {
                     <BsGit className='iconsStyle' color='#F05032' size={45}/>
                     <AiOutlineHtml5 className='iconsStyle' color='#E34F26' size={45}/>
                     <BiLogoCss3 className='iconsStyle' color='#1572B6' size={45}/> 
+                    <img className='iconsStyle' style={{ width: '45px', height: '45px'}} src={ styled } alt="styled-comp" />
                     <FaBootstrap className='iconsStyle' color='#7952B3' size={45}/>
-                    <img className='iconsStyle' style={{ width: '45px', height: '45px', color: 'white'}} src={ tailwind } alt="tailwind" />
+                    <img className='iconsStyle' style={{ width: '45px', height: '45px'}} src={ tailwind } alt="tailwind" />
+                    <img className='iconsStyle' style={{ width: '45px', height: '45px'}} src={ material } alt="material" />
                   </div>
               </div>
             </div>
@@ -56,30 +58,23 @@ export const Portafolio = () => {
             </div>
           </div>
 
-          <br />
-            
-          <div>
-            <div className="p-2 flex max-w-6xl mx-auto rounded-xl justify-center">
-                <div className='grid grid-cols-1 gap-6'>                    
-                    <div>
-                      {InView && <AnimationComponentLeft 
-                      image={ unidebikesLogo }
-                      alt='undiebikes'
-                      description='Sitio web de Undiebikes'
-                      url='https://undiebikes.vercel.app/'
-                      />}
-                    </div>
-                    <div>
-                      {InView && <AnimationComponentRight 
-                      image={ capAldas }
-                      alt='aldasReposteria'
-                      description='Sitio web de Aldas Repostería'
-                      url='https://aldas-reposteria.vercel.app/'
-                      />}
-                    </div>                  
-                </div>
+          <br />            
+                           
+            <div className='flex justify-center flex-col max-w-xd mx-auto'>
+              {InView && <AnimationComponentLeft 
+              image={ unidebikesLogo }
+              alt='undiebikes'
+              description='Sitio web de Undiebikes'
+              url='https://undiebikes.vercel.app/'
+              />}
+
+              {InView && <AnimationComponentRight 
+              image={ capAldas }
+              alt='aldasReposteria'
+              description='Sitio web de Aldas Repostería'
+              url='https://aldas-reposteria.vercel.app/'
+              />}
             </div>
-          </div>
 
           <div className='m-5'>
             <div className="max-w-6xl mx-auto flex flex-wrap mt-10 mb-10 md:p-3 lg:p-0 relative">

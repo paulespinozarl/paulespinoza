@@ -17,15 +17,16 @@ const AnimationComponentLeft = ({image, alt, description, url}) => {
     }, [inView]);
 
   return (
-    <div ref={ref} className="p-2 flex max-w-xd mx-auto rounded-xl justify-center">
+    <div ref={ref} className={`p-2 flex max-w-xd mx-auto rounded-xl justify-center mr-2 ml-2
+    ${
+      isVisible
+          ? 'animate__animated animate__fadeInLeft'
+          : 'opacity-0'
+    }`}>
         <div className='grid grid-cols-1 gap-6'>
             <div className='bg-gray-800 p-2 rounded-xl flex shadow-md shadow-gray-600'>
                 <a href={ url } target="_blank">
-                    <img className={`lg:w-full w-72 rounded-xl ${
-                      isVisible
-                          ? 'animate__animated animate__fadeInLeft'
-                          : 'opacity-0'
-                    }`} 
+                    <img className="lg:w-full w-72 rounded-xl" 
                     src={ image } 
                     alt={ alt } />
                 </a>

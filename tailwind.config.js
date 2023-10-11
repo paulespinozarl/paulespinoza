@@ -10,7 +10,7 @@ export default {
         'xd': '966px',
       },
       mwidth: {
-        '200': '500px'
+        '200': '665px'
       }
     },
   },
