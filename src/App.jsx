@@ -6,9 +6,9 @@ import { Footer } from "./components/Footer"
 export const App = () => {
   return (
     <>
-       <Navbar/>
-       <Portafolio/>
-       <Footer/>
+      <Navbar/>
+        <Portafolio/>
+      <Footer/>
     </>
   )
 }

@@ -11,6 +11,9 @@ export default {
       },
       mwidth: {
         '200': '665px'
+      },
+      width: {
+        'xxxl': '300px', // Nueva propiedad personalizada
       }
     },
   },

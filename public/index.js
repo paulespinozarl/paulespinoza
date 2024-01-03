@@ -6,3 +6,6 @@ export const capAldas = 'capAldas.jpg';
 export const pdf = '08.pdf';
 export const styled = 'styled.png';
 export const material = 'material.svg';
+export const rollet = 'rolleet.jpg';
+export const rolletIcon = 'rolleetIcon.png';
+export const iupsm = 'iupsm.jpg';
