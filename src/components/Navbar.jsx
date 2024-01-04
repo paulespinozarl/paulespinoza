@@ -8,10 +8,10 @@ export const Navbar = () => {
 
   return (
     <nav className='flex p-5 text-gray-200'>
-      <div className='text-2xl font-bold max-w-4xl mx-auto flex items-center'>
+      <div className='text-2xl font-bold max-w-4xl mx-auto flex items-center mt-2'>
         <span>Paul Espinoza</span>
       </div>
-      <div className='text-xl font-bold max-w-4xl mx-auto flex items-center'>
+      <div className='text-xl font-bold max-w-4xl mx-auto flex items-center mt-2'>
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125 mr-2">
           <FaLinkedin size={isShortScreen ? 30 : 25}/>
         </a>

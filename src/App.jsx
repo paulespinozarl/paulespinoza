@@ -1,6 +1,6 @@
-import { Portafolio } from "./components/Portafolio"
 import { Navbar } from "./components/Navbar"
 import { Footer } from "./components/Footer"
+import { Portafolio } from "./screen/Portafolio"
 
 
 export const App = () => {
