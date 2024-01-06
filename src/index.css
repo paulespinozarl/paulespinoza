@@ -13,3 +13,13 @@
 .animationProyects{
     @apply rounded-xl hover:scale-105 transition-all duration-500 w-72 h-72 object-cover 
 }
+
+.cuadroDeTexto {
+    padding: 6px;
+    margin-top: 6px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
