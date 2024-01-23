@@ -7,7 +7,7 @@ const AnimationComponentLeft = ({image, alt, title, url, description}) => {
     const [isVisible, setIsVisible] = useState(false);
     const { ref, inView } = useInView({
       triggerOnce: true,
-      threshold: 0.6,
+      threshold: 0.2,
     });
 
     useEffect(() => {

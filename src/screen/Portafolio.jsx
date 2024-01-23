@@ -9,13 +9,13 @@ import { Learnig } from '../components/Learnig';
 
 export const Portafolio = () => {
 
-  const descriptionOne = `Programador Jr. en Rolleet, enfocado en optimización y refactorización de código.`
-  const descriptionTwo = 'Estudiante de Ing. En Sistemas - IUPSM. Mérida, Venezuela 2014 - 2017.'
+  const descriptionOne = `Diversas funciones en la App mobile desarrollada con React Native y en el BackOffice con NextJs.`
+  const descriptionTwo = 'Ing. En Sistemas - Mérida, Venezuela 2014 - 2017.'
   return (
       <>
         <Summary/>
         <Text
-          title='Desarrollador de Software'
+          title='Experiencia'
           subtitle='Empleo'
         />
 
@@ -41,15 +41,15 @@ export const Portafolio = () => {
         <div className='flex justify-center flex-col max-w-xd mx-auto'>
           {InView && <AnimationComponent
           image={ iupsm }
-          alt='rolleet'
-          title='IUPSM'
+          alt='iupsm'
+          title='Santiago Mariño'
           description={ descriptionTwo }
           url='https://www.udemy.com/'
           />}
         </div>
 
         <Text
-          title='Desarrollador de Software'
+          title='Aprendizaje'
           subtitle='Aprendizaje'
           text='En curso'
         />
