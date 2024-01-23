@@ -9,3 +9,4 @@ export const material = 'material.svg';
 export const rollet = 'rolleet.jpg';
 export const rolletIcon = 'rolleetIcon.png';
 export const iupsm = 'iupsm.jpg';
+export const cv = 'cv.pdf'

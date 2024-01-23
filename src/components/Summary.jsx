@@ -6,7 +6,7 @@ import { BiLogoCss3 } from 'react-icons/bi';
 import { TbBrandTypescript } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { tailwind, styled, material } from '../../public';
+import { styled, material } from '../../public';
 import { HoverComp } from './HoverComp';
 
 export const Summary = () => {

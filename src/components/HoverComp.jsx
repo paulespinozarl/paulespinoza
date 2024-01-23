@@ -11,6 +11,7 @@ export const HoverComp = ({text, icon}) => {
   const manejarMouseLeave = () => {
     setHover(false);
   };
+  
   return (
     <>
       <div className='iconoContainer' onMouseEnter={manejarMouseEnter} onMouseLeave={manejarMouseLeave}>
