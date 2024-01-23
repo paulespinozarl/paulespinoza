@@ -26,13 +26,13 @@ const AnimationComponentLeft = ({image, alt, title, url, description}) => {
         <div className='grid grid-cols-1 gap-6'>
             <div className='bg-gray-800 p-2 rounded-xl shadow-md shadow-gray-600 flex justify-center items-center'>
                 <a href={ url } target="_blank">
-                    <img className="lg:w-xxxl w-44 min-w-40 rounded-xl" 
+                    <img className="lg:w-xxxl w-40 max-h-32 lg:max-h-44 rounded-xl object-cover" 
                     src={ image } 
                     alt={ alt } />
                 </a>
                 <div className='flex justify-center items-center flex-col'>
-                <span className='m-2 md:m-5 text-gray-200 font-medium text-xl md:text-2xl'>{ title }</span>    
-                <span className='m-2 md:m-5 text-gray-200 font-medium text-xs md:text-xs'>{ description }</span>
+                <span className='m-2 md:m-5 text-gray-200 font-medium text-xl md:text-2xl '>{ title }</span>    
+                <span className='m-2 md:m-5 text-gray-200 font-medium text-xs md:text-xs lg:w-72 w-40'>{ description }</span>
                 </div>
             </div>
         </div>

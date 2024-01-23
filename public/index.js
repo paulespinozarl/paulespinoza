@@ -10,3 +10,4 @@ export const rollet = 'rolleet.jpg';
 export const rolletIcon = 'rolleetIcon.png';
 export const iupsm = 'iupsm.jpg';
 export const cv = 'cv.pdf'
+export const logoNawara = 'logo.png'

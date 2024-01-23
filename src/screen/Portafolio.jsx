@@ -2,15 +2,17 @@ import 'animate.css';
 import { InView } from 'react-intersection-observer';
 
 import AnimationComponent from '../components/AnimationComponent';
-import { rollet, iupsm } from '../../public';
+import { rollet, iupsm, logoNawara } from '../../public';
 import { Summary } from '../components/Summary';
 import { Text } from '../components/Text';
 import { Learnig } from '../components/Learnig';
 
 export const Portafolio = () => {
 
-  const descriptionOne = `Diversas funciones en la App mobile desarrollada con React Native y en el BackOffice con NextJs.`
-  const descriptionTwo = 'Ing. En Sistemas - Mérida, Venezuela 2014 - 2017.'
+  const des1 = `Diversas funciones en la App mobile desarrollada con React Native y en el BackOffice con NextJs.`
+  const des2 = `Ing. En Sistemas - Mérida, Venezuela 2014 - 2017.`
+  const des3 = `Desarrollo de algunas secciones del sitio web`
+  
   return (
       <>
         <Summary/>
@@ -26,8 +28,18 @@ export const Portafolio = () => {
           image={ rollet }
           alt='rolleet'
           title='Rolleet'
-          description={ descriptionOne }
+          description={ des1 }
           url='https://rolleet.app/'
+          />}
+        </div>
+        
+        <div className='flex justify-center flex-col max-w-xd mx-auto'>
+          {InView && <AnimationComponent
+          image={ logoNawara }
+          alt='nawara'
+          title='Nawara'
+          description={ des3 }
+          url='https://nawara.app/'
           />}
         </div>
 
@@ -43,7 +55,7 @@ export const Portafolio = () => {
           image={ iupsm }
           alt='iupsm'
           title='Santiago Mariño'
-          description={ descriptionTwo }
+          description={ des2 }
           url='https://www.udemy.com/'
           />}
         </div>
