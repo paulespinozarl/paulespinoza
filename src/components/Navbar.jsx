@@ -18,7 +18,7 @@ export const Navbar = () => {
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125 mr-5">
           <FaGithub size={isShortScreen ? 30 : 25}/>
         </a>
-        <a href='../../public' download='cv-paul-espinoza.pdf' target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125">
+        <a href='../../public/cv-paul-espinoza.pdf' download='cv-paul-espinoza.pdf' target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125">
           <IoDownloadOutline size={isShortScreen ? 30 : 25}/>
         </a>
       </div>
