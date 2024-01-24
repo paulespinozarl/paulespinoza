@@ -21,6 +21,9 @@ export const Navbar = () => {
         <a href='../../public/cv-paul-espinoza.pdf' download='cv-paul-espinoza.pdf' target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125">
           <IoDownloadOutline size={isShortScreen ? 30 : 25}/>
         </a>
+        <a href='/cv-paul-espinoza.pdf' download='paulespinoza-pdf' className="transition-transform duration-200 hover:scale-125">
+          <IoDownloadOutline size={isShortScreen ? 30 : 25}/>
+        </a>
       </div>
     </nav>
   );
