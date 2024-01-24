@@ -1,6 +1,7 @@
 import { useMediaQuery } from '@react-hook/media-query';
 import { IoDownloadOutline } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { cvpaul } from '../../public/index';
 
 export const Navbar = () => {
 
@@ -18,7 +19,7 @@ export const Navbar = () => {
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125 mr-5">
           <FaGithub size={isShortScreen ? 30 : 25}/>
         </a>
-        <a href='../public/cv-paul-espinoza.pdf' download='cv-paul-espinoza.pdf' target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125">
+        <a href={ cvpaul } download='cv-paulespinoza.pdf' target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-125">
           <IoDownloadOutline size={isShortScreen ? 30 : 25}/>
         </a>
       </div>
