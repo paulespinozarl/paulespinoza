@@ -7,7 +7,7 @@
 }
 
 .iconsStyle{
-    @apply transition-transform duration-200 hover:scale-125 m-4
+    @apply transition-transform duration-200 hover:scale-125 m-3
 }
 
 .animationProyects{
