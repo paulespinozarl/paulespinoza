@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'animate.css';
 import { useInView } from 'react-intersection-observer';
 
-const AnimationComponentLeft = ({image, alt, title, url, description}) => {
+const AnimationComponentLeft = ({image, alt, title, url = '', description}) => {
 
     const [isVisible, setIsVisible] = useState(false);
     const { ref, inView } = useInView({

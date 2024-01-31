@@ -19,6 +19,7 @@ export const Portafolio = () => {
         <Text
           title='Experiencia'
           subtitle='Empleo'
+          text='Desarrollador Jr'
         />
 
         <br />            
@@ -56,7 +57,6 @@ export const Portafolio = () => {
           alt='iupsm'
           title='Santiago Mariño'
           description={ des2 }
-          url='https://www.udemy.com/'
           />}
         </div>
 

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .contenedor{
-    @apply p-2 shadow-lg shadow-gray-700 lg:flex flex-col lg:flex-row max-w-6xl mx-auto bg-gray-800 rounded-xl justify-center;
+    @apply p-2 shadow-lg shadow-gray-700 sm:flex flex-col sm:flex-row max-w-6xl mx-auto bg-gray-800 rounded-xl justify-center;
 }
 
 .iconsStyle{
