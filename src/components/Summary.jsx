@@ -17,7 +17,7 @@ export const Summary = () => {
         <div className='contenedor'>
           <div className='w-2/4 p-2 rounded-2xl m-2'>
             <h1 className='text-2xl md:text-3xl text-white p-2 font-semibold w-72 lg:w-full'>Hola, soy Paul</h1>
-            <p className=' text-md lg:text-xl md:text-lg p-3 text-gray-50 w-80 sm:w-64 md:w-72 lg:w-96'>Radicado en Argentina con experiencia en el desarrollo de aplicaciones y paginas web usando frameworks y bibliotecas UI.</p>
+            <p className='text-md lg:text-xl md:text-lg p-3 text-gray-50 w-80 sm:w-64 md:w-72 lg:w-96'>Radicado en Argentina con experiencia en el desarrollo de aplicaciones y paginas web usando frameworks y bibliotecas UI.</p>
             <p className='text-white text-2xl md:text-3xl font-semibold p-2 mt-5'> Contacto </p>
               <div className='flex mb-2 mt-2 ml-2'>
                 <a href='mailto:paulespinozarl@gmail.com' className='mr-5 transition-transform duration-200 hover:scale-125'>
