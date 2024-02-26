@@ -10,6 +10,7 @@ const AnimationComponent = ({
   description,
   url = "",
   animationDirection,
+  web,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [direction, setDirection] = useState(animationDirection);
@@ -42,6 +43,7 @@ const AnimationComponent = ({
         text={description}
         href={url}
         image={image}
+        web={web}
       />
     </div>
   );

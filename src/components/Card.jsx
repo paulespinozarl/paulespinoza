@@ -9,7 +9,9 @@ const Card = ({ title, subtitle, text, href = "", image, web = "" }) => {
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
           <p>{text}</p>
-          <a href={href}>{web}</a>
+          <a target="_blank" href={href}>
+            {web}
+          </a>
         </div>
       </div>
     </div>

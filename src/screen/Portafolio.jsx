@@ -25,7 +25,8 @@ export const Portafolio = () => {
             title="Rolleet"
             subtitle={"01/23 - 12/23"}
             description="Diversas funciones en la App mobile desarrollada con React Native y en el BackOffice con NextJs."
-            url="https://rolleet.app/"
+            url="https://www.instagram.com/rolleetapp/"
+            web="Web"
             animationDirection="right"
             isFirst={true}
           />
