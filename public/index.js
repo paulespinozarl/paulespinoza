@@ -1,17 +1,9 @@
-export const tailwind = "tailwind.png";
-export const unidebikesLogo = "unidebikesLogo.jpg";
-export const kenitosBurger = "kenitosBurger.jpg";
-export const aldaReposteria = "aldaReposteria.jpg";
-export const capAldas = "capAldas.jpg";
-export const pdf = "08.pdf";
 export const styled = "styled.png";
 export const material = "material.svg";
-export const rollet = "rolleet.jpg";
-export const rolletIcon = "rolleetIcon.png";
-export const iupsm = "iupsm.jpg";
-export const cv = "cv.pdf";
-export const logoNawara = "logo.png";
+
 export const cvpaul = "cv-02-24.pdf";
+
+export const rollet = "rolleet.jpg";
 export const logo_pico = "logo-nawara-pico.png";
 export const iupsm2 = "santiago-mariño.jpg";
 export const udemy = "udemy.png";
