@@ -1,43 +1,50 @@
-import React, { useEffect, useState } from 'react';
-import 'animate.css';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect, useState } from "react";
+import "animate.css";
+import { useInView } from "react-intersection-observer";
+import Card from "./Card";
 
-const AnimationComponentLeft = ({image, alt, title, url = '', description}) => {
+const AnimationComponent = ({
+  image,
+  title,
+  subtitle,
+  description,
+  url = "",
+  animationDirection,
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [direction, setDirection] = useState(animationDirection);
 
-    const [isVisible, setIsVisible] = useState(false);
-    const { ref, inView } = useInView({
-      triggerOnce: true,
-      threshold: 0.2,
-    });
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
 
-    useEffect(() => {
-      if (inView) {
-        setIsVisible(true);
-      }
-    }, [inView]);
+  useEffect(() => {
+    if (inView && !isVisible) {
+      setIsVisible(true);
+      setDirection((prevDirection) =>
+        prevDirection === "right" ? "left" : "right"
+      );
+    }
+  }, [inView, isVisible]);
+
+  const animationClass = `animate__animated ${
+    isVisible
+      ? `animate__fadeIn${direction === "right" ? "Right" : "Left"}`
+      : "opacity-0"
+  }`;
 
   return (
-    <div ref={ref} className={`p-2 flex max-w-xd mx-auto rounded-xl justify-center mr-2 ml-2
-    ${
-      isVisible
-          ? 'animate__animated animate__fadeInDown'
-          : 'opacity-0'
-    }`}>
-        <div className='grid grid-cols-1 gap-6'>
-            <div className='bg-gray-800 p-2 rounded-xl shadow-md shadow-gray-600 flex justify-center items-center'>
-                <a href={ url } target="_blank">
-                    <img className="lg:w-xxxl w-40 max-h-32 lg:max-h-44 rounded-xl object-cover" 
-                    src={ image } 
-                    alt={ alt } />
-                </a>
-                <div className='flex justify-center items-center flex-col'>
-                <span className='m-2 md:m-5 text-gray-200 font-medium text-xl md:text-2xl '>{ title }</span>    
-                <span className='m-2 md:m-5 text-gray-200 font-medium text-xs md:text-xs lg:w-72 w-40'>{ description }</span>
-                </div>
-            </div>
-        </div>
+    <div ref={ref} className={`mb-10 ${animationClass}`}>
+      <Card
+        title={title}
+        subtitle={subtitle}
+        text={description}
+        href={url}
+        image={image}
+      />
     </div>
   );
 };
 
-export default AnimationComponentLeft;
+export default AnimationComponent;

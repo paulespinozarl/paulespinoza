@@ -2,24 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
-.contenedor{
-    @apply p-2 shadow-lg shadow-gray-700 sm:flex flex-col sm:flex-row max-w-6xl mx-auto bg-gray-800 rounded-xl justify-center;
+.contenedor {
+  @apply p-2 shadow-lg shadow-gray-700 sm:flex flex-col sm:flex-row max-w-6xl mx-auto bg-gray-800 rounded-xl justify-center;
 }
 
-.iconsStyle{
-    @apply transition-transform duration-200 hover:scale-125 m-3
+.iconsStyle {
+  @apply transition-transform duration-200 hover:scale-125 m-3;
 }
 
-.animationProyects{
-    @apply rounded-xl hover:scale-105 transition-all duration-500 w-72 h-72 object-cover 
+.animationProyects {
+  @apply rounded-xl hover:scale-105 transition-all duration-500 w-72 h-72 object-cover;
+}
+
+.image {
+  filter: drop-shadow(10px 7px 10px gray);
 }
 
 .cuadroDeTexto {
-    padding: 6px;
-    margin-top: 6px;
-    position: absolute;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.9);
-    background-color: rgba(255, 255, 255, 0.5);
+  padding: 6px;
+  margin-top: 6px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 400px;
+  padding: 20px;
+  background: rgb(31 41 55 / var(--tw-bg-opacity));
+  border-radius: 24px;
+  height: auto;
+}
+
+.card img {
+  max-width: 150px;
+  max-height: 150px;
+  width: 35vw;
+  height: 150px;
+  object-fit: cover;
+  margin-left: -100px;
+  margin-right: 30px;
+  border-radius: inherit;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.75;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.card a {
+  display: flex;
+  justify-content: center;
+}
+
+.card button {
+  border: 1px solid #f8f8f8;
+  background: transparent;
+  color: #f8f8f8;
+  font-family: inherit;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+@media (width <= 600px) {
+  .card {
+    margin: 0 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
   }
-  
+
+  .card h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+  }
+
+  .card p {
+    max-width: 360px;
+  }
+}
+
+@media (width <= 440px) {
+  .card img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: -90px 0 0 0;
+  }
+
+  .card {
+    height: auto;
+    margin-top: 80px;
+    padding: 15px;
+  }
+}
