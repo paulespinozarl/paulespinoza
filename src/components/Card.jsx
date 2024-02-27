@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = ({ title, subtitle, text, href = "", image, web = "" }) => {
+const Card = ({ title, subtitle, text, href = "", image, web = "", clase }) => {
   return (
     <div className="flex justify-center">
-      <div className="card">
+      <div className={clase}>
         <img className="image" src={image} alt="Nawara" />
         <div className="text-slate-100">
           <h2>{title}</h2>

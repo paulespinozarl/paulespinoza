@@ -3,7 +3,7 @@ import "animate.css";
 import { useInView } from "react-intersection-observer";
 import Card from "./Card";
 
-const AnimationComponent = ({
+const Animation = ({
   image,
   title,
   subtitle,
@@ -11,6 +11,7 @@ const AnimationComponent = ({
   url = "",
   animationDirection,
   web,
+  clase,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [direction, setDirection] = useState(animationDirection);
@@ -38,6 +39,7 @@ const AnimationComponent = ({
   return (
     <div ref={ref} className={`mb-10 ${animationClass}`}>
       <Card
+        clase={clase}
         title={title}
         subtitle={subtitle}
         text={description}
@@ -49,4 +51,4 @@ const AnimationComponent = ({
   );
 };
 
-export default AnimationComponent;
+export default Animation;

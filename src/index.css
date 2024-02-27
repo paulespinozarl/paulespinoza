@@ -32,7 +32,7 @@
   align-items: center;
   width: 75vw;
   max-width: 400px;
-  padding: 20px;
+  padding: 10px;
   background: rgb(31 41 55 / var(--tw-bg-opacity));
   border-radius: 24px;
   height: auto;
@@ -54,6 +54,9 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
 }
 
 .card h3 {
@@ -61,6 +64,9 @@
   font-weight: 400;
   margin: 0;
   opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
 }
 
 .card p {
@@ -68,11 +74,15 @@
   font-weight: 400;
   margin-bottom: 15px;
   opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
 }
 
 .card a {
   display: flex;
   justify-content: center;
+  margin-right: 40px;
 }
 
 .card button {
@@ -85,9 +95,83 @@
   border-radius: 40px;
 }
 
+/**/
+
+.card2 {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 400px;
+  padding: 10px;
+  background: rgb(31 41 55 / var(--tw-bg-opacity));
+  border-radius: 24px;
+  height: auto;
+  flex-direction: row-reverse;
+  padding-left: 50px; /* Cambiar la dirección de los elementos */
+}
+
+.card2 img {
+  max-width: 150px;
+  max-height: 150px;
+  width: 35vw;
+  height: 150px;
+  object-fit: cover;
+  margin-right: -100px; /* Ajustar margen a la derecha */
+  margin-left: 50px; /* Ajustar margen a la izquierda */
+  border-radius: inherit;
+}
+
+.card2 h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card2 h3 {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+}
+
+.card2 p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.card2 a {
+  display: flex;
+  justify-content: center;
+}
+
+.card2 button {
+  border: 1px solid #f8f8f8;
+  background: transparent;
+  color: #f8f8f8;
+  font-family: inherit;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+@media (width <=890px) {
+  .card img {
+    object-fit: cover;
+  }
+}
+
 @media (width <= 600px) {
   .card {
-    margin: 50px 40px;
+    margin: 80px 40px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 60px;
@@ -102,6 +186,18 @@
     font-size: 26px;
   }
 
+  .card h3 {
+    margin-right: 0;
+  }
+
+  .card p {
+    margin-right: 0;
+  }
+
+  .card a {
+    margin-right: 0;
+  }
+
   .card img {
     margin: -100px 0 0 0;
     max-width: 1000px;
@@ -112,6 +208,43 @@
 
   .card p {
     max-width: 360px;
+  }
+  /**/
+  .card2 {
+    margin: 80px 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card2 h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card2 h3 {
+    margin-right: 0;
+  }
+
+  .card2 p {
+    margin-right: 0;
+    max-width: 360px;
+  }
+
+  .card2 a {
+    margin-right: 0;
+  }
+
+  .card2 img {
+    margin: -100px 0 0 0;
+    max-width: 1000px;
+    height: 250px;
+    object-fit: fill;
+    border-radius: 20%;
   }
 }
 
@@ -127,5 +260,36 @@
     height: auto;
     margin-top: 80px;
     padding: 15px;
+  }
+  /**/
+  .card2 img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: -90px 0 0 0;
+  }
+
+  .card2 {
+    height: auto;
+    margin-top: 80px;
+    padding: 15px;
+  }
+
+  .card2 h2 {
+    margin-left: 0;
+    font-size: 26px;
+  }
+
+  .card2 h3 {
+    margin-left: 0;
+  }
+
+  .card2 p {
+    margin-left: 0;
+    max-width: 360px;
+  }
+
+  .card2 a {
+    margin-left: 0;
   }
 }
