@@ -76,7 +76,7 @@ export const Summary = () => {
                 icon={
                   <TbBrandNextjs
                     className="iconsStyle"
-                    color="#BEBEBE"
+                    color="#000"
                     size={40}
                   />
                 }
@@ -102,7 +102,7 @@ export const Summary = () => {
               <HoverComp
                 text="Mongo DB"
                 icon={
-                  <SiMongodb className="iconsStyle" color="#E8E8E8" size={40} />
+                  <SiMongodb className="iconsStyle" color="#47A248" size={40} />
                 }
               />
               <HoverComp

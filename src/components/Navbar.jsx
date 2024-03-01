@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-screen h-16 flex text-gray-900 bg-slate-100 z-30 shadow-lg">
-      <div className="text-xl md:text-2xl font-bold max-w-4xl mx-auto flex items-center mt-2">
+      <div className="text-xl md:text-2xl font-bold max-w-4xl mx-auto flex items-center">
         <span>Paul Espinoza</span>
       </div>
       <div className="text-xl font-bold max-w-4xl mx-auto flex items-center mt-2">

@@ -37,7 +37,7 @@ const Animation = ({
   }`;
 
   return (
-    <div ref={ref} className={`mb-10 ${animationClass}`}>
+    <div ref={ref} className={`py-10 ${animationClass}`}>
       <Card
         clase={clase}
         title={title}
