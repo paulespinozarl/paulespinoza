@@ -5,6 +5,7 @@
   transition-property: opacity, filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
+  background: transparent;
   font: inherit;
   color: inherit;
   text-transform: none;
