@@ -7,7 +7,7 @@ export const Navbar = () => {
   const isShortScreen = useMediaQuery("(min-width: 700px)");
 
   return (
-    <nav className="fixed top-0 w-screen h-16 flex text-gray-900 bg-slate-100 z-30 shadow-lg">
+    <nav className="fixed top-0 w-screen h-16 flex text-gray-900 bg-slate-100 z-30 shadow-lg bg-transparent backdrop-blur-md">
       <div className="text-xl md:text-2xl font-bold max-w-4xl mx-auto flex items-center">
         <span>Paul Espinoza</span>
       </div>
