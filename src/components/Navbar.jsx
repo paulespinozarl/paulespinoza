@@ -5,6 +5,7 @@ import { cvpaul } from "../../public/index";
 import Button from "./Button";
 import SideBar from "./SideBar";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const isLargeScreen = useMediaQuery("(min-width: 864px)");
@@ -32,7 +33,17 @@ export const Navbar = () => {
         }`}
       >
         <div className="text-xl md:text-2xl font-bold max-w-4xl flex items-center">
-          <span className="ml-10 text-xl lg:text-2xl">Paul Espinoza</span>
+          <Link
+            spy={true}
+            smooth={true}
+            duration={1000}
+            to="sobre-mi"
+            offset={-64}
+            onClick={handleLinkClick}
+            className="ml-10 text-xl lg:text-2xl"
+          >
+            Paul Espinoza
+          </Link>
         </div>
         {isLargeScreen && (
           <span className="flex items-center mr-10">
