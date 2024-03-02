@@ -27,7 +27,7 @@ export const Navbar = () => {
   return (
     <div className="flex fixed top-0 shadow-md w-screen z-50 bg-transparent backdrop-blur-md">
       <nav
-        className={`h-16 flex justify-between w-screen text-gray-900 ${
+        className={`h-16 flex justify-between w-screen text-gray-950 ${
           showMenu ? "hidden" : "flex"
         }`}
       >

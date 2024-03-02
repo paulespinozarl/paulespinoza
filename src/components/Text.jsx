@@ -1,7 +1,7 @@
-export const Text = ({ title, subtitle, text = "" }) => {
+export const Text = ({ title, subtitle, text = "", id }) => {
   return (
     <>
-      <div className="mx-5 mt-5">
+      <div id={id} className="mx-5 mt-5">
         <div className="max-w-6xl mx-auto flex flex-wrap md:p-3 lg:p-0 relative">
           <div className="absolute top-0 mt-5 lg:top-5 md:left-5 left-0 lg:left-5 h-32 ">
             <h1 className="text-2xl sm:text-6xl md:text-7xl font-bold dark:text-slate-500/30 text-slate-700/20">

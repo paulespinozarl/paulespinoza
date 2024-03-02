@@ -14,6 +14,7 @@ export const Portafolio = () => {
         title="Experiencia"
         subtitle="Empleo"
         text="Desarrollador de Software & Web"
+        id={"experiencia"}
       />
 
       <br />
@@ -45,7 +46,11 @@ export const Portafolio = () => {
           clase="card"
         />
       )}
-      <Text title="Desarrollador de Software" subtitle="Educación" />
+      <Text
+        id={"educacion"}
+        title="Desarrollador de Software"
+        subtitle="Educación"
+      />
 
       <br />
 
