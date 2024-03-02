@@ -40,7 +40,7 @@ export const Portafolio = () => {
           description="Sitio web. Desarrollado con React & Typescript. Utilizando Tailwind
                    como libreria de diseño y trabajando con animaciones de Animate.css
                    y Motion. Respetando las mejores practicas y diseño responsive"
-          url="https://nawara.app/"
+          url="https://nawara-web-paul.vercel.app/"
           web="Web"
           animationDirection="left"
           clase="card"

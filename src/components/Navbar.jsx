@@ -12,7 +12,7 @@ export const Navbar = () => {
   const isShortScreen = useMediaQuery("(max-width: 864px)");
   const [isActive, setIsActive] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleActive = () => {
     setIsActive(!isActive);

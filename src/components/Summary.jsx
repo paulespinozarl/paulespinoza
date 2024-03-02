@@ -11,8 +11,8 @@ export const Summary = () => {
               Hola, soy Paul
             </h1>
             <p className="text-md lg:text-xl md:text-lg p-3 text-gray-50 w-80 sm:w-64 md:w-72 lg:w-96">
-              Radicado en Argentina con experiencia en el desarrollo de
-              aplicaciones y paginas web usando frameworks y bibliotecas UI.
+              Con experiencia en el desarrollo de aplicaciones y paginas web
+              usando frameworks y bibliotecas UI.
             </p>
             <p className="text-white text-2xl md:text-3xl font-semibold p-2 mt-5">
               Contacto
