@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@react-hook/media-query";
 import { IoDownloadOutline } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { cvpaul } from "../../public/index";
+import { avatar, cvpaul } from "../../public/index";
 import Button from "./Button";
 import SideBar from "./SideBar";
 import { useState } from "react";
@@ -42,7 +42,11 @@ export const Navbar = () => {
             onClick={handleLinkClick}
             className="ml-10 text-xl lg:text-2xl"
           >
-            Paul Espinoza
+            <img
+              className="h-16 md:h-20 top-5 image absolute"
+              src={avatar}
+              alt="avatar"
+            />
           </Link>
         </div>
         {isLargeScreen && (
