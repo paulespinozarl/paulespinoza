@@ -8,18 +8,20 @@ export const Summary = () => {
         <div className="contenedor">
           <div className="w-2/4 p-2 rounded-2xl m-2">
             <h1 className="text-2xl md:text-3xl text-white p-2 font-semibold w-72 lg:w-full">
-              Hola, soy Paul
+              Desarrollador Front-End
             </h1>
             <p className="text-lg lg:text-xl md:text-lg p-3 text-gray-50 w-80 sm:w-64 md:w-72 lg:w-96">
-              Con experiencia en el desarrollo de aplicaciones y paginas web
-              usando frameworks y bibliotecas UI.
+              Hola, soy Paul. Con experiencia en el desarrollo de aplicaciones y
+              paginas web usando frameworks y bibliotecas UI.
             </p>
             <p className="text-white text-2xl md:text-3xl font-semibold p-2 mt-5">
               Contacto
             </p>
             <div className="flex gap-4 p-2">
-              {contact.map((skill, index) => (
-                <HoverComp key={index} text={skill.text} icon={skill.icon} />
+              {contact.map((item, index) => (
+                <a key={index} target="_blank" href={item.href}>
+                  {item.icon}
+                </a>
               ))}
             </div>
           </div>
