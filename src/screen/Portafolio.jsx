@@ -2,7 +2,7 @@ import "animate.css";
 import { InView } from "react-intersection-observer";
 
 import Animation from "../components/Animation";
-import { rollet, iupsm2, logo_pico, udemy } from "../../public";
+import { rollet, iupsm2, logo_pico, udemy, kenitos } from "../../public";
 import { Summary } from "../components/Summary";
 import { Text } from "../components/Text";
 
@@ -46,6 +46,20 @@ export const Portafolio = () => {
           clase="card"
         />
       )}
+
+      {InView && (
+        <Animation
+          image={kenitos}
+          title="Kenitos"
+          subtitle={"03-24"}
+          description="Sitio web de Fabrica de panes. Desarrollado con React. Utilizando Tailwind
+          y Animate.css."
+          url="https://kenitos.vercel.app/"
+          web="Web"
+          animationDirection="right"
+          clase="card2"
+        />
+      )}
       <Text
         id={"educacion"}
         title="Desarrollador de Software"
@@ -60,7 +74,7 @@ export const Portafolio = () => {
           title="Santiago Mariño"
           subtitle="Ing. en Sistemas"
           description="Mérida, Venezuela 2014 - 2017."
-          animationDirection="right"
+          animationDirection="left"
           clase="card2"
           isFirst={true}
         />
@@ -71,7 +85,7 @@ export const Portafolio = () => {
           title="Udemy"
           subtitle="Cursos"
           description="React Js, React Native, Node Js"
-          animationDirection="left"
+          animationDirection="right"
           clase="card"
         />
       )}

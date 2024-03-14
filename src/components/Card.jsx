@@ -47,7 +47,7 @@ const Card = ({ title, subtitle, text, href = "", image, web = "", clase }) => {
         <div className="text-slate-100">
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
-          <p>{text}</p>
+          <p className="text-center">{text}</p>
           <a target="_blank" href={href}>
             {web}
           </a>
