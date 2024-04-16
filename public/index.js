@@ -1,4 +1,4 @@
-export const cvpaul = "cv-paul-espinoza.pdf";
+export const cvpaul = "cv-paulespinoza.pdf";
 export const rollet = "rolleet.jpg";
 export const logo_pico = "logo-nawara-pico.png";
 export const iupsm2 = "santiago-mariño.jpg";

@@ -69,7 +69,7 @@ export const Navbar = () => {
             </a>
             <a
               href={cvpaul}
-              download="cv-02-24.pdf"
+              download="cv-paulespinoza.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-transform duration-200 hover:scale-125"
