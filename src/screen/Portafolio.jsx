@@ -2,7 +2,7 @@ import "animate.css";
 import { InView } from "react-intersection-observer";
 
 import Animation from "../components/Animation";
-import { rollet, iupsm2, logo_pico, udemy, kenitos } from "../../public";
+import { rollet, iupsm2, logo_pico, udemy, kenitos, footx } from "../../public";
 import { Summary } from "../components/Summary";
 import { Text } from "../components/Text";
 
@@ -18,6 +18,19 @@ export const Portafolio = () => {
       />
 
       <br />
+
+      {InView && (
+        <Animation
+          image={footx}
+          title="Foot X"
+          subtitle={"05/24 - Actualidad"}
+          description="Desarrollador de  Software"
+          url="https://www.footx.com.ar/"
+          web="Web"
+          animationDirection="left"
+          clase="card"
+        />
+      )}
 
       {InView && (
         <Animation
@@ -44,20 +57,6 @@ export const Portafolio = () => {
           web="Web"
           animationDirection="left"
           clase="card"
-        />
-      )}
-
-      {InView && (
-        <Animation
-          image={kenitos}
-          title="Kenitos"
-          subtitle={"03-24"}
-          description="Sitio web de Fabrica de panes. Desarrollado con React. Utilizando Tailwind
-          y Animate.css."
-          url="https://kenitos.vercel.app/"
-          web="Web"
-          animationDirection="right"
-          clase="card2"
         />
       )}
       <Text

@@ -5,3 +5,4 @@ export const iupsm2 = "santiago-mariño.jpg";
 export const udemy = "udemy.png";
 export const avatar = "avatar.png";
 export const kenitos = "kenitos.jpg";
+export const footx = "footx.png";
