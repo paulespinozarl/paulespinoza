@@ -28,7 +28,7 @@ export const Portafolio = () => {
           description="Desarrollador de  Software"
           url="https://www.footx.com.ar/"
           web="Web"
-          animationDirection="left"
+          animationDirection="right"
           clase="card"
         />
       )}
@@ -44,7 +44,7 @@ export const Portafolio = () => {
           url="https://nawara.app/"
           web="Web"
           animationDirection="left"
-          clase="card2"
+          clase="card"
         />
       )}
 
@@ -75,8 +75,8 @@ export const Portafolio = () => {
           title="Udemy"
           subtitle="Cursos"
           description="React Js, React Native, Node Js"
-          animationDirection="right"
-          clase="card2"
+          animationDirection="left"
+          clase="card"
           isFirst={true}
         />
       )}
@@ -86,7 +86,7 @@ export const Portafolio = () => {
           title="Santiago Mariño"
           subtitle="Ing. en Sistemas"
           description="Mérida, Venezuela 2014 - 2017."
-          animationDirection="left"
+          animationDirection="right"
           clase="card"
           
         />
