@@ -44,7 +44,7 @@ export const Portafolio = () => {
           url="https://nawara.app/"
           web="Web"
           animationDirection="left"
-          clase="card"
+          clase="card2"
         />
       )}
 
@@ -76,7 +76,7 @@ export const Portafolio = () => {
           subtitle="Cursos"
           description="React Js, React Native, Node Js"
           animationDirection="left"
-          clase="card"
+          clase="card2"
           isFirst={true}
         />
       )}
