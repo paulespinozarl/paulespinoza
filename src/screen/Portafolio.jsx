@@ -21,6 +21,7 @@ export const Portafolio = () => {
 
       {InView && (
         <Animation
+          isFirst={true}
           image={footx}
           title="Foot X"
           subtitle={"05/24 - Actualidad"}
@@ -29,6 +30,21 @@ export const Portafolio = () => {
           web="Web"
           animationDirection="left"
           clase="card"
+        />
+      )}
+      
+      {InView && (
+        <Animation
+          image={logo_pico}
+          title="Nawara"
+          subtitle={"01/24 - Actualidad"}
+          description="Sitio web. Desarrollado con React & Typescript. Utilizando Tailwind
+                   como libreria de diseño y trabajando con animaciones de Animate.css
+                   y Motion. Respetando las mejores practicas y diseño responsive"
+          url="https://nawara.app/"
+          web="Web"
+          animationDirection="left"
+          clase="card2"
         />
       )}
 
@@ -41,24 +57,10 @@ export const Portafolio = () => {
           url="https://www.instagram.com/rolleetapp/"
           web="Web"
           animationDirection="right"
-          clase="card2"
-        />
-      )}
-
-      {InView && (
-        <Animation
-          image={logo_pico}
-          title="Nawara"
-          subtitle={"01/24 - Actualidad"}
-          description="Sitio web. Desarrollado con React & Typescript. Utilizando Tailwind
-                   como libreria de diseño y trabajando con animaciones de Animate.css
-                   y Motion. Respetando las mejores practicas y diseño responsive"
-          url="https://nawara.app/"
-          web="Web"
-          animationDirection="left"
           clase="card"
         />
       )}
+
       <Text
         id={"educacion"}
         title="Desarrollador de Software"
@@ -69,23 +71,24 @@ export const Portafolio = () => {
 
       {InView && (
         <Animation
-          image={iupsm2}
-          title="Santiago Mariño"
-          subtitle="Ing. en Sistemas"
-          description="Mérida, Venezuela 2014 - 2017."
-          animationDirection="left"
+          image={udemy}
+          title="Udemy"
+          subtitle="Cursos"
+          description="React Js, React Native, Node Js"
+          animationDirection="right"
           clase="card2"
           isFirst={true}
         />
       )}
       {InView && (
         <Animation
-          image={udemy}
-          title="Udemy"
-          subtitle="Cursos"
-          description="React Js, React Native, Node Js"
-          animationDirection="right"
+          image={iupsm2}
+          title="Santiago Mariño"
+          subtitle="Ing. en Sistemas"
+          description="Mérida, Venezuela 2014 - 2017."
+          animationDirection="left"
           clase="card"
+          
         />
       )}
     </div>
