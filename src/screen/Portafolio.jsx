@@ -21,6 +21,7 @@ export const Portafolio = () => {
 
       {InView && (
         <Animation
+          isFirst={true}
           image={footx}
           title="Foot X"
           subtitle={'05/24 - Actualidad'}
@@ -29,8 +30,23 @@ export const Portafolio = () => {
             hasta el despliegue en las tiendas de aplicaciones"
           url="https://www.footx.com.ar/"
           web="Web"
-          animationDirection="left"
+          animationDirection="right"
           clase="card"
+        />
+      )}
+
+      {InView && (
+        <Animation
+          image={logo_pico}
+          title="Nawara"
+          subtitle={'01/24 - Actualidad'}
+          description="Sitio web. Desarrollado con React & Typescript. Utilizando Tailwind
+                   como libreria de diseño y trabajando con animaciones de Animate.css
+                   y Motion. Respetando las mejores practicas y diseño responsive"
+          url="https://nawara.app/"
+          web="Web"
+          animationDirection="left"
+          clase="card2"
         />
       )}
 
@@ -61,6 +77,7 @@ export const Portafolio = () => {
           clase="card"
         />
       )}
+
       <Text
         id={'educacion'}
         title="Desarrollador de Software"
