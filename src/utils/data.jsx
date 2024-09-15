@@ -44,14 +44,6 @@ export const skills = [
     icon: <GrMysql className="iconsStyle" color="#1580E3" size={40} />,
   },
   {
-    text: 'HTML',
-    icon: <AiOutlineHtml5 className="iconsStyle" color="#E34F26" size={40} />,
-  },
-  {
-    text: 'CSS',
-    icon: <BiLogoCss3 className="iconsStyle" color="#1572B6" size={40} />,
-  },
-  {
     text: 'Tailwind',
     icon: <SiTailwindcss className="iconsStyle" color="#1CBDCD" size={40} />,
   },
