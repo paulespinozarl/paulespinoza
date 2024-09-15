@@ -1,10 +1,10 @@
-import "animate.css";
-import { InView } from "react-intersection-observer";
+import 'animate.css';
+import {InView} from 'react-intersection-observer';
 
-import Animation from "../components/Animation";
-import { rollet, iupsm2, logo_pico, udemy, kenitos, footx } from "../../public";
-import { Summary } from "../components/Summary";
-import { Text } from "../components/Text";
+import Animation from '../components/Animation';
+import {rollet, iupsm2, logo_pico, udemy, footx} from '../../public';
+import {Summary} from '../components/Summary';
+import {Text} from '../components/Text';
 
 export const Portafolio = () => {
   return (
@@ -14,7 +14,7 @@ export const Portafolio = () => {
         title="Experiencia"
         subtitle="Empleo"
         text="Desarrollador de Software & Web"
-        id={"experiencia"}
+        id={'experiencia'}
       />
 
       <br />
@@ -23,8 +23,10 @@ export const Portafolio = () => {
         <Animation
           image={footx}
           title="Foot X"
-          subtitle={"05/24 - Actualidad"}
-          description="Desarrollador de  Software"
+          subtitle={'05/24 - Actualidad'}
+          description="Aplicación móvil desarrollada con React Native, Node.js y MySQL. Responsable
+            del Frontend y Backend. Encargado de todo el proceso, desde la documentación y desarrollo, 
+            hasta el despliegue en las tiendas de aplicaciones"
           url="https://www.footx.com.ar/"
           web="Web"
           animationDirection="left"
@@ -36,7 +38,7 @@ export const Portafolio = () => {
         <Animation
           image={rollet}
           title="Rolleet"
-          subtitle={"01/23 - 12/23"}
+          subtitle={'01/23 - 12/23'}
           description="Diversas funciones en la App mobile desarrollada con React Native y en el BackOffice con NextJs."
           url="https://www.instagram.com/rolleetapp/"
           web="Web"
@@ -49,7 +51,7 @@ export const Portafolio = () => {
         <Animation
           image={logo_pico}
           title="Nawara"
-          subtitle={"01/24 - Actualidad"}
+          subtitle={'01/24 - Actualidad'}
           description="Sitio web. Desarrollado con React & Typescript. Utilizando Tailwind
                    como libreria de diseño y trabajando con animaciones de Animate.css
                    y Motion. Respetando las mejores practicas y diseño responsive"
@@ -60,7 +62,7 @@ export const Portafolio = () => {
         />
       )}
       <Text
-        id={"educacion"}
+        id={'educacion'}
         title="Desarrollador de Software"
         subtitle="Educación"
       />
@@ -69,23 +71,23 @@ export const Portafolio = () => {
 
       {InView && (
         <Animation
-          image={iupsm2}
-          title="Santiago Mariño"
-          subtitle="Ing. en Sistemas"
-          description="Mérida, Venezuela 2014 - 2017."
-          animationDirection="left"
-          clase="card2"
-          isFirst={true}
-        />
-      )}
-      {InView && (
-        <Animation
           image={udemy}
           title="Udemy"
           subtitle="Cursos"
           description="React Js, React Native, Node Js"
           animationDirection="right"
+          clase="card2"
+        />
+      )}
+      {InView && (
+        <Animation
+          image={iupsm2}
+          title="Santiago Mariño"
+          subtitle="Ing. en Sistemas"
+          description="Mérida, Venezuela 2014 - 2017."
+          animationDirection="left"
           clase="card"
+          isFirst={true}
         />
       )}
     </div>

@@ -1,5 +1,5 @@
-import { HoverComp } from "./HoverComp";
-import { contact, skills } from "../utils/data";
+import {HoverComp} from './HoverComp';
+import {contact, skills} from '../utils/data';
 
 export const Summary = () => {
   return (
@@ -8,11 +8,11 @@ export const Summary = () => {
         <div className="contenedor">
           <div className="w-2/4 p-2 rounded-2xl m-2">
             <h1 className="text-2xl md:text-3xl text-white p-2 font-semibold w-72 lg:w-full">
-              Desarrollador Front-End
+              Desarrollador Full Stack
             </h1>
             <p className="text-lg lg:text-xl md:text-lg p-3 text-gray-50 w-80 sm:w-64 md:w-72 lg:w-96">
-              Hola, soy Paul. Con experiencia en el desarrollo de aplicaciones y
-              paginas web usando frameworks y bibliotecas UI.
+              Hola, soy Paul. Con experiencia en el desarrollo de aplicaciones
+              móviles y paginas web usando frameworks y bibliotecas UI.
             </p>
             <p className="text-white text-2xl md:text-3xl font-semibold p-2 mt-5">
               Contacto
