@@ -1,22 +1,12 @@
-import {FaJsSquare, FaReact, FaBootstrap} from 'react-icons/fa';
-import {BsGit} from 'react-icons/bs';
-import {PiWhatsappLogoThin} from 'react-icons/pi';
-import {AiOutlineHtml5} from 'react-icons/ai';
-import {CiMail} from 'react-icons/ci';
-import {BiLogoCss3} from 'react-icons/bi';
+import {FaSalesforce, FaBootstrap, FaNodeJs, FaReact} from 'react-icons/fa';
+import {SiTailwindcss, SiStyledcomponents, SiMui} from 'react-icons/si';
 import {TbBrandTypescript} from 'react-icons/tb';
-import {SiTailwindcss} from 'react-icons/si';
-import {TbBrandNextjs} from 'react-icons/tb';
-import {FaNodeJs} from 'react-icons/fa';
-import {SiMui} from 'react-icons/si';
-import {SiStyledcomponents} from 'react-icons/si';
+import {PiWhatsappLogoThin} from 'react-icons/pi';
 import {GrMysql} from 'react-icons/gr';
+import {CiMail} from 'react-icons/ci';
+import {BsGit} from 'react-icons/bs';
 
 export const skills = [
-  {
-    text: 'JavaScript',
-    icon: <FaJsSquare className="iconsStyle" color="#F7DF1E" size={40} />,
-  },
   {
     text: 'TypeScript',
     icon: (
@@ -24,12 +14,12 @@ export const skills = [
     ),
   },
   {
-    text: 'NextJs',
-    icon: <TbBrandNextjs className="iconsStyle" color="#000" size={40} />,
-  },
-  {
     text: 'React Js & Native',
     icon: <FaReact className="iconsStyle" color="#61DAFB" size={40} />,
+  },
+  {
+    text: 'Salesforce',
+    icon: <FaSalesforce className="iconsStyle" color="#1580E3" size={40} />,
   },
   {
     text: 'Node Js',
