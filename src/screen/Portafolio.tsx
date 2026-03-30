@@ -13,7 +13,7 @@ export const Portafolio = () => {
       <Text
         title="Experiencia"
         subtitle="Empleos"
-        text="Desarrollador de Software & Web"
+        text="Desarrollador de Software"
         id={'experiencia'}
       />
 
